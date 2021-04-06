@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - PRISM</title>
+    <link rel="icon" type="image/png" href="assets/img/prism-logo-black.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="assets/css/Dark-Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Search-Field-With-Icon.css">
+    <link rel="stylesheet" href="assets/css/simple-footer.css">
+
+    <style>
+       
+
+        #demo {
+		color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10%;
+  background-color:  #002654;
+}
+
+#demo td, #demo th {
+  border: 1px solid transparent;
+  padding: 8px;
+}
+
+#demo tr:nth-child(even){background-color: white;font-weight: bold; }
+
+#demo tr:hover {background-color: #000080;}
+
+#demo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: dark-gray;
+  color: white;
+
+        }
+    </style>
+</head>
+
+<body style="background-color:#002654;">
+
+    <main class="page shopping-cart-page">
+        <section class="clean-block clean-cart dark" style="background-color:rgba(10,111,183,0);height:0px;padding:0px;"></section>
+    </main>
+    <footer class="page-footer dark" style="padding:0px;"></footer>
+    <div class="footer-dark" style="margin:0px 0px 0px 0px;height:0px;background-color:#002654;">
+        <div style="text-align:center;"></div>
+        <div class="text">
+            <!--INPUT BAR-->
+            <div class="search-container"><input id="choices-text-preset-values" type="text" name="search-bar" placeholder="Search..." class="search-input" style="padding:0px 0px 0px 0px;width:50%;margin:0% 0% 0% 5%;"><button onclick="callsAPI(document.getElementById('choices-text-preset-values').value);"  class="btn btn-light search-btn" type="button"> <i class="fa fa-search"></i></button></div>
+       <h1 style="padding-left:80px;">Showing Top 10 Results...</h1>
+		</div>
+		 
+    </div>
+	
+<div id="demo"></div>
+   
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="index.html" style="height:22;"><img src="assets/img/prism-logo.png" style="height:30px;padding:25px, 0px;">&nbsp; prism</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item item" role="presentation"><a class="nav-link" href="index.html">HOME | Search</a></li>
+                    <li class="nav-item item" role="presentation"><a class="nav-link" href="features.html">FEATURES</a></li>
+                    <li class="nav-item item" role="presentation"><a class="nav-link" href="about-us.html">About us</a></li>
+                    <li class="nav-item item" role="presentation"><a class="nav-link" href="submit.html">submit your study</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#" style="font-family:Montserrat, sans-serif;"><img src="assets/img/prism-logo.png" style="width:15%;">PRISM</a></h3>
+                <p class="links">Pisay Research Inventory in Science and Mathematics</p>
+                <p class="company-name">© 2020</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">Sitio Sampaga, Brgy. Sampaga</span> Batangas City, Philippines</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +63 977 401 2111</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank" style="font-size:11px;">vttovilla@cbzrc.pshs.edu.ph</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>Co-Founders</h4>
+                <p> Mars Frederick H. Songco, Ramnick Francis P. Ramos, and Vianney Jo T. Tovilla</p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+
+    <!--THE FUNCTION RELATED TO THE SEARCH ENGINE IS AS FOLLOWS-->
+    <!--Mars, the following code are still in here because I added another search bar on the results page-->
+    <script>
+
+      function callsAPI(x) {
+        //  window.alert(document.getElementById("choices-text-preset-values").value);
+
+           window.localStorage.setItem("option", x);
+           window.location.href = 'results.html';
+      }
+
+        //LINES AFTER THIS IS THE ONES ORIGINALLY ON THE RESULTS PAGE
+
+        query = window.localStorage.getItem("option");
+        link = 'https://cs-04-01.azurewebsites.net/getSimilar?query=' + query
+
+        $(document).ready(function() {
+            $.getJSON(link, function(json) {
+                tableGenerator('#demo', json);
+            });
+        });
+
+function tableGenerator(selector, data) { 
+  var keys = Object.keys(Object.assign({}, ...data));
+  // Add header
+  var head = '<thead><tr>';
+  keys.forEach(function(key) {
+    head += '<th>'+key+'</th>';
+  });
+  $(selector).append(head+'</tr></thead>');
+  // Add body
+  var body = '<tbody  >';
+  data.forEach(function(obj) { 
+    var row = '<tr>';
+	c=0;
+    keys.forEach(function(key) { 
+      row += '<td>';
+	  i=0;
+      if (obj.hasOwnProperty(key)) { 
+        
+		if(c%2!=0)
+			{
+			row += (obj[key]*100).toFixed(2) + "%";
+			}
+		else {
+			if(c%3!=0)
+			{
+				row += "<a href='https://arxiv.org/pdf/" + obj[key] + ".pdf'> Download Here. </a>";
+				}
+			else
+			{
+				row += obj[key].toUpperCase();
+				}
+		}
+		c++;
+		i++;
+      }
+      row += '</td>';
+    });
+    body += row+'<tr>';
+  })
+  $(selector).append(body+'</tbody>');
+}
+
+      console.log(link);
+      console.log(query)
+
+
+
+    </script>
+
+</body>
+
+</html>
